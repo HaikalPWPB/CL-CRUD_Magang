@@ -9,8 +9,8 @@ class UserController extends Controller
 {
 
     public function index() {
-        $data['users'] = DB::table('users')->select('*')->get();
-        return view('welcome', $data);
+        // $data['users'] = DB::table('users')->select('*')->get();
+        return view('index');
     }
 
     public function tambahView() {
